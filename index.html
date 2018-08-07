@@ -6,28 +6,53 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
 	</head>
-	<body>
+	<body id="body">
 		<!--广告栏-->
-		<div class="box1">
+		<div class="box1" id="adDiv">
 			<div class="adDiv">
 				<span class="adSpan"><广告></span>
 			</div>
 		</div>
 		<!--导航栏-->
+		<div id="bigBox"></div>
 		<div class="box2" id="leaderPosition">
 			<div class="leader">
 				<ul>
 					<li><a href="http://index.html"><i class="iconfont">&#xe631;</i></a></li>
-					<li><a href="#">Mac</a></li>
-					<li><a href="#">iPad</a></li>
-					<li><a href="#">iPhone</a></li>
-					<li><a href="#">Watch</a></li>
-					<li><a href="#">Music</a></li>
-					<li><a href="#">技术支持</a></li>
-					<li><i class="iconfont" id="serch">&#xe617;</i></li>
+					<li><a href="#" class="goOut">Mac</a></li>
+					<li><a href="#" class="goOut">iPad</a></li>
+					<li><a href="#" class="goOut">iPhone</a></li>
+					<li><a href="#" class="goOut">Watch</a></li>
+					<li><a href="#" class="goOut">Music</a></li>
+					<li><a href="#" class="goOut">技术支持</a></li>
+					<li id="serchBig">
+						<i class="iconfont" id="serch">&#xe617;</i>
+						<input type="submit" id="serchBtn" value=""/>
+						<input type="text" placeholder="搜索 apple.com" id="serchInput"/>
+					</li>
 					<li><i class="iconfont" id="shoppingBag">&#xe65a;</i></li>
 				</ul>
-				
+			</div>
+			<div id="keyWords">
+				<ul>
+					<li id="title">
+						<span>快速链接</span>
+						<ul>
+							<li>
+								<a href="#">查找零售店</a>
+							</li>
+							<li>
+								<a href="#">配件</a>
+							</li>
+							<li>
+								<a href="#">iPod</a>
+							</li>
+							<li>
+								<a href="#">ios</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 			<div class="hidden" id="hidden">
 				<div class="symble"></div>

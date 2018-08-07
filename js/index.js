@@ -1,4 +1,7 @@
 window.onload = function(){
+	$(window).scroll(function(){
+		leaderPosition();
+	});
 	document.getElementById("shoppingBag").onclick = function(){
 		let show1 = document.getElementById("hidden");
 		let show2 = document.getElementById("login");
@@ -9,9 +12,15 @@ window.onload = function(){
 			show1.style.display="none";
 			show2.style.display="none";
 		}
-		loginPosition();
+		
+		$(window).resize(function(){
+		  	loginPosition();
+		});	
 	}
-
+	document.getElementById("serch").onclick = function(){
+		serchInput();
+	}
+	
 	document.getElementById("iPhoneX").onclick = function(){
 		jump1();
 	}
@@ -53,12 +62,52 @@ function loginPosition(){
 		show2.style.top=SBDomTop+34+"px";
 }
 
-// function leaderPosition(){
-// 	let leaderDom = document.getElementById("leaderPosition");
-// 	if(){
+function serchInput(){
+	document.getElementById("leaderPosition").style.backgroundColor = "#1f1f1f";
+	document.getElementById("adDiv").style.display = "none";
+	document.getElementById("serch").style.display = "none";
+	document.getElementById("bigBox").style.display = "block";
+	document.getElementById("serchInput").style.display = "block";
+	// document.getElementById("serchInput").foucs();
+	document.getElementById("serchBtn").style.display = "block";
+	document.getElementById("body").style.overflow = "hidden";
+	let outObj = document.getElementsByClassName("goOut");
+	let fontSize = 14;
+	setTimeout(function(){
+		let myTimer = setInterval(function (){
+			if(fontSize>0){
+				fontSize-=1;
+				for(var i=0;i<outObj.length;i++){
+					let temp = outObj[i];
+					temp.style.fontSize = fontSize+"px";
+					temp.parentNode.style.display = "none";
+				}
+			}else if(fontSize<=0){
+				clearInterval(myTimer);
+				document.getElementById("keyWords").style.display = "block";
+				document.getElementById("keyWords").style.left = document.getElementById("serchBtn").offsetLeft+"px";
+			}
+		},30);
+	},50);
+	// for(var i=0;i<outObj.length;i++){
+	// 	let temp = outObj[i];
+	// 	temp.animate({ 
+	//     	fontSize:"0px"
+ //    	}, 1000 );
+	// }
+	
+	// setTimeout(function{
 
-// 	}
-// }
+	// },1000);
+}
+
+function leaderPosition(){
+	let leaderDom = document.getElementById("leaderPosition");
+	if($("html").scrollTop>=40){
+		leaderDom.style.position = "fixed";
+		leaderDom.style.top = 0+"px";
+	}
+}
 
 function jump1(){
 	window.location.href="#" ;

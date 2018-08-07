@@ -18,6 +18,17 @@ img{
 .box3,.box4,.box5,.hot{
 	cursor:pointer;
 }
+#bigBox{
+	position:fixed;
+	top:45px;
+	left:0;
+	width: 100%;
+	height:100%;
+	background: #000000;
+	opacity: 0.4;
+	z-index: 9999;
+	display: none;
+}
 /*广告*/
 .box1{
 	width:100%;
@@ -31,7 +42,7 @@ img{
 }
 .adDiv .adSpan{
 	float:right;
-	margin-right:20%;
+	margin-right:s20%;
 	line-height:40px;
 	color:#838486;
 	font-size: 12px;
@@ -43,7 +54,7 @@ img{
 	background:#333333;
 }
 .box2 .leader{
-	width:50%;
+	width:55%;
 	height:45px;
 	margin:0 auto;
 }
@@ -71,15 +82,75 @@ img{
 	color:#fbfbfb;
 	font-size:16px;
 	line-height:45px;
+	vertical-align: top;
 }
+.leader #serchBtn{
+	width:40px;
+	height:44px;
+	background: url("../img/serchbg.jpg") center;
+	border:none;
+	display: none;
+	outline:none;
+	margin:0 auto;
 
+}
+.leader #serchInput{
+	width:642px;
+	height:42px;
+	display:none;
+	border:none;
+	background:#1f1f1f;
+	outline:none;
+	color:#ffffff;
+}
+.leader #serchBig{
+	display: flex;
+}
+#keyWords{
+	width:685px;
+	height:200px;
+	margin:0 auto;
+	background:#ffffff;
+	position:fixed;
+	display: none;
+	z-index: 99999;
+}
+#keyWords ul:first-child{
+	margin-top:25px;
+}
+#title span{
+	padding-left:40px;
+	font-size:12px;
+	color:#676767;
+}
+#title li{
+	padding-left:55px;
+	margin:5px;
+	height:27px;
+}
+#title li a{
+	font-size:14px;
+	color:#343434;
+	line-height: 27px;
+}
+#title li a:hover{
+	text-decoration: none;
+	
+}
+#title li:hover{
+	background: #f2f2f2;
+	
+}
+#title li:hover a{
+	color:#387fcf;
+}
 /*登录窗口*/
 .hidden{
 	width:15px;
 	height:10px;
 	overflow:hidden;
 	position:absolute;
-	z-index: 1;
+	z-index: 998;
 	display: none;
 }
 .symble{
@@ -89,13 +160,13 @@ img{
 	border:1px solid #d6d6d6;
 	transform: rotateZ(45deg);
 	margin:3px auto;
-	z-index: 1;
+	z-index: 998;
 
 }
 .login{
 	width:288px;
 	height:305px;
-	z-index: 0;
+	z-index: 997;
 	position:absolute;
 	right:25%;
 	background:#ffffff;

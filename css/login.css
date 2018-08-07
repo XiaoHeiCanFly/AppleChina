@@ -1,0 +1,299 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑",arial;
+}
+body{
+	background: #f2f2f2;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+ul{
+	list-style: none;
+}
+
+/*导航栏*/
+.box2{
+	/*position:relative;*/
+	width:100%;
+	background:#333333;
+}
+.box2 .leader{
+	width:55%;
+	height:45px;
+	margin:0 auto;
+}
+.leader ul{
+	display:flex;
+	margin:0 auto;
+}
+.leader ul li{
+	margin:0 auto;
+}
+.leader ul li a:hover{
+	text-decoration: none;
+	color:#888888;
+}
+.leader ul li .iconfont:hover{
+	cursor:pointer;
+	color:#888888;
+}
+.leader a{
+	color:#fbfbfb;
+	font-size:14px;
+	line-height:45px;
+}
+.leader .iconfont{
+	color:#fbfbfb;
+	font-size:16px;
+	line-height:45px;
+}
+
+/*登录窗口*/
+.hidden{
+	width:15px;
+	height:10px;
+	overflow:hidden;
+	position:absolute;
+	z-index: 1;
+	display: none;
+}
+.symble{
+	width:12px;
+	height:12px;
+	background:#ffffff;
+	border:1px solid #d6d6d6;
+	transform: rotateZ(45deg);
+	margin:3px auto;
+	z-index: 1;
+
+}
+.login{
+	width:288px;
+	height:305px;
+	z-index: 0;
+	position:absolute;
+	right:25%;
+	background:#ffffff;
+	border:1px solid #d6d6d6;
+	display: none;
+}
+.login p{
+	font-size:12px;
+	color:#888888;
+	padding:35px 0;
+	margin:0;
+	text-align:center;
+}
+.login ul li{
+	border-bottom:1px solid #888888;
+	color: #0070c9;
+    display: block;
+    line-height: 41px;
+    margin: 0 30px;
+    font-size:14px;
+}
+.login ul li:last-child{
+	border:none;
+}
+.login .iconfont{
+	margin-right:8px;
+}
+
+.excel{
+	width:980px;
+	height:543px;
+	border:1px solid #d2d2d2;
+	margin:53px auto 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px #d2d2d2;
+	overflow: hidden;
+	background: #ffffff;
+}
+.top{
+	display: flex;
+	height:56px;
+	width:952px;
+	margin:auto;
+	border-bottom: 1px solid #d2d2d2;
+}
+.top h1{
+	line-height: 35px;
+	font-size:22px;
+	color:#000000;
+	margin-top: 15px;
+}
+.top span{
+	margin-left:830px;
+	line-height: 25px;
+	margin-top:25px;
+	font-size:12px;
+	color:#808080;
+}
+.center{
+	display:flex;
+	height:420px;
+	background: url("../img/loginBg.png") no-repeat;
+	background-position: 490px 0;
+	border-bottom:1px solid #d2d2d2;
+}
+.center .leftBox{
+	width:397px;
+	padding-left:93px;
+}
+.center h1{
+	margin-top:70px;
+	font-size:18px;
+	color:#000000;
+	line-height: 40px
+}
+.center .textInput{
+	display:block;
+	width:335px;
+	height:34px;
+	border-radius: 4px;
+	border:1px solid #bfbfbf;
+	margin-top:14px;
+	font-size:16px;
+	line-height: 34px;
+	text-indent: 10px;
+	box-shadow:inset -1px 1px 3px #bfbfbf;
+}
+.center .leftBox a{
+	display: block;
+	width:152px;
+	font-size:12px;
+	line-height: 18px;
+	margin-top:16px;
+	float:left;
+}
+.center .goBtn{
+	height:35px;
+	width:84px;
+	background:url(../img/btnbg.png) center repeat-x;
+	border:none;
+	border-radius: 4px;
+	font-size:12px;
+	color:#ffffff;
+	margin-top:15px;
+	float:right;
+	margin-right:61px;
+}
+.center .rightBox{
+	width:429px;
+	padding-left:55px;
+}
+.rightBox h2{
+	margin-top:90px;
+	font-size:18px;
+	color:#333333;
+	line-height: 24px
+}
+.rightBox ul{
+	list-style: disc;
+	margin-left:25px;
+	margin-top: 13px;
+}
+.rightBox ul li{
+	line-height: 24px;
+	color:#666666;
+}
+.rightBox a{
+	font-size:12px;
+	color:#3e85cf;
+	margin-top: 20px;
+	line-height: 20px;
+	display: block;
+}
+.bottom{
+	height:67px;
+	background:url(../img/bottombg.png) center repeat-x;
+}
+.bottom input{
+	background: url(../img/bottombg.png) center repeat-x;
+	width:82px;
+	height:33px;
+	border:1px solid #b5b5b5;
+	border-radius: 4px;
+	float:left;
+	margin-top:16px;
+	margin-left:24px;
+}
+.bottom p{
+	font-size:12px;
+	color:#333333;
+	margin-left: 690px;
+	line-height: 67px;
+}
+/*footer*/
+
+.protect{
+	width:980px;
+	margin:0 auto;
+	border-bottom:1px solid #a0a0a0;
+}
+.protect p{
+	line-height: 50px;
+	font-size: 8px;
+	color:#a0a0a0;
+}
+.protect a{
+	color:#7d7d7d;
+}
+.box7{
+	width:980px;
+	margin:18px auto 0;
+	/*border-bottom:1px solid #a0a0a0;*/
+}
+.box7 p{
+	color:#a0a0a0;
+	font-size:10px;
+}
+.box7 a{
+	font-size:8px;
+}
+
+.box8{
+	width:980px;
+	margin:0 auto;
+	/*padding-bottom: 20px;*/
+}
+.box8 p{
+	color:#a0a0a0;
+	font-size:8px;
+	float:left;
+}
+.box8 ul{
+	float:left;
+	margin-left: 30px;
+}
+.box8 ul li{
+	float:left;
+	font-size:8px;
+	background:url("../img/libg.png") center right no-repeat;
+	padding:0 12px;
+}
+.box8 ul li:last-child{
+	background:none;
+}
+.box8 a{
+	color:#7d7d7d;
+}
+.box8 span{
+	float:left;
+	color:#a0a0a0;
+	font-size:8px;
+	margin-left:380px; 
+	
+}
+.box8 span img{
+	display:inline;
+}
+.box8 span a{
+	vertical-align: top;
+}
+
