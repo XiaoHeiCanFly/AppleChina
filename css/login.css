@@ -284,11 +284,9 @@ ul{
 	color:#7d7d7d;
 }
 .box8 span{
-	float:left;
+	float:right;
 	color:#a0a0a0;
 	font-size:8px;
-	margin-left:380px; 
-	
 }
 .box8 span img{
 	display:inline;

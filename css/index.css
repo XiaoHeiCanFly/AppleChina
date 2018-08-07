@@ -551,11 +551,9 @@ img{
 	color:#7d7d7d;
 }
 .box8 span{
-	float:left;
+	float:right;
 	color:#a0a0a0;
-	font-size:10px;
-	margin-left:230px; 
-	
+	font-size:8px;
 }
 .box8 span img{
 	display:inline;
