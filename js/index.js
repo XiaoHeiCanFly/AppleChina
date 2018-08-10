@@ -12,7 +12,7 @@ window.onload = function(){
 			show1.style.display="none";
 			show2.style.display="none";
 		}
-		
+		loginPosition();
 		$(window).resize(function(){
 		  	loginPosition();
 		});	
@@ -52,14 +52,14 @@ window.onload = function(){
 
 function loginPosition(){
 	let shoppingBagDom = document.getElementById("shoppingBag");
-		let SBDomLeft = shoppingBagDom.offsetLeft;
-		let SBDomTop = shoppingBagDom.offsetTop;
-		let show1 = document.getElementById("hidden");
-		let show2 = document.getElementById("login");
-		show1.style.left=SBDomLeft+"px";
-		show1.style.top=SBDomTop+27+"px";
-		show2.style.left=SBDomLeft-144+"px";
-		show2.style.top=SBDomTop+34+"px";
+	let SBDomLeft = shoppingBagDom.offsetLeft;
+	let SBDomTop = shoppingBagDom.offsetTop;
+	let show1 = document.getElementById("hidden");
+	let show2 = document.getElementById("login");
+	show1.style.left=SBDomLeft+"px";
+	show1.style.top=SBDomTop+27+"px";
+	show2.style.left=SBDomLeft-144+"px";
+	show2.style.top=SBDomTop+34+"px";
 }
 
 function serchInput(){

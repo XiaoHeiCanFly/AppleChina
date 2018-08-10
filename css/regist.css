@@ -161,6 +161,9 @@ hr{
 	height:1px;
 	background-color:#e7e7e8;
 }
+/*.passwordPart{
+	position:relative;
+}*/
 .prompt{
 	width:482px;
 	font-size:12px;
@@ -171,6 +174,51 @@ hr{
 .passwordInput{
 	margin-top:7px;
 }
+.hidden{
+	width:15px;
+	height:10px;
+	overflow:hidden;
+	position:absolute;
+	z-index: 998;
+	top:43px;
+	left:525px;
+	display: none;
+}
+.symble{
+	width:12px;
+	height:12px;
+	background:#ffffff;
+	border:1px solid #d6d6d6;
+	transform: rotateZ(45deg);
+	margin:3px auto;
+	z-index: 998;
+}
+.remind{
+	width:250px;
+	height:125px;
+	border:1px solid #d5d5da;
+	z-index: 997;
+	position:absolute;
+	top:50px;
+	left:415px;
+	background:#ffffff;
+	border-radius: 4px;
+	display:none;
+}
+.remind p{
+	font-size: 10px;
+	color:#898989;	
+}
+.remind .iconfont{
+	font-size: 12px;
+	color:#898989;	
+	margin-right:5px;
+}
+.remind p:first-child{
+	font-size: 12px;
+	color:#050505;
+}
+
 .surepassword{
 	margin-top:15px;
 }
